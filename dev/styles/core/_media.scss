@@ -1,0 +1,27 @@
+@mixin media($size){
+
+    @if type_of($size) == 'string'{
+        $value: map-get($breakpoints, $size);
+        @media screen and (max-width: $value){
+            @content;
+        }
+    } @else{
+        @media screen and (max-width: #{$size}px){
+            @content;
+        }
+    }
+}
+
+@mixin media-min($size){
+
+    @if type_of($size) == 'string'{
+        $value: map-get($breakpoints, $size);
+        @media screen and (min-width: $value + 1px){
+            @content;
+        }
+    } @else{
+        @media screen and (min-width: #{$size}px){
+            @content;
+        }
+    }
+}

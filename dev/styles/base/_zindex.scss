@@ -1,0 +1,15 @@
+.sidebar {
+    z-index: 1;
+}
+
+.header {
+    z-index: 2;
+
+    &.-white {
+        z-index: 4;
+    }
+}
+
+.projects {
+    z-index: 3;
+}

@@ -1,0 +1,78 @@
+/*--------------------------------------/
+ Alignment
+--------------------------------------*/
+
+.text-right{
+    text-align: right;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.float-left{
+    float: left;
+}
+
+.float-right{
+    float: right;
+}
+
+/*--------------------------------------/
+ Flex
+--------------------------------------*/
+
+.flex-box{
+    display: flex;
+}
+
+.h-center, .h-start, .h-end, .h-between, .h-around,
+.v-center, .v-start, .v-end, .v-between, .v-around{
+    @extend .flex-box;
+}
+
+.h-center{
+    justify-content: center;
+}
+
+.h-start{
+    justify-content: flex-start;
+}
+
+.h-end{
+    justify-content: flex-end;
+}
+
+.h-around{
+    justify-content: space-around;
+}
+
+.h-between{
+    justify-content: space-between;
+}
+
+.v-center{
+    align-items: center;
+}
+
+.v-start{
+    align-items: flex-start;
+}
+
+.v-end{
+    align-items: flex-end;
+}
+
+.v-around{
+    align-content: space-around;
+}
+
+.v-between{
+    align-content: space-between;
+}
+
+

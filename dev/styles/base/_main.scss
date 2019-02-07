@@ -1,0 +1,38 @@
+body{
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    background: $white;
+    font-family: $text-family;
+    font-size: $base-font-size;
+    color: $base-color;
+    min-width: 320px;
+}
+
+.wrapper {
+    position: relative;
+    min-height: 100%;
+    height: 1px;
+}
+
+.main {
+    min-height: 100%;
+    height: 1px;
+}
+
+.container{
+    width: $container-width;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    &.-medium{
+        width: $container-width / 1.5;
+    }
+    
+    &.-full{
+        width: 100%;
+    }
+}

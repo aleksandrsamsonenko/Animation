@@ -1,0 +1,49 @@
+.hero {
+    color: $white;
+    overflow: hidden; // prevent scroll
+    min-height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: $header-height;
+    padding-right: $sidebar-width;
+    display: flex;
+    align-items: center;
+
+    &_content {
+        margin-bottom: 100px;
+    }
+
+    &.-hide {
+        position: absolute;
+        z-index: -1;
+    }
+
+    &_title {
+        font-size: 48px;
+        font-weight: 800;
+        position: relative;
+        max-width: 525px;
+        text-transform: uppercase;
+        line-height: 1.25;
+
+        p {
+            position: relative;
+        }
+
+        &:before {
+            content: '';
+            width: 195px;
+            height: 74px;
+            background-image: url($image-path + 'tmp/title_bg.png');
+            position: absolute;
+            top: -6px;
+            left: -105px;
+        }
+    }
+
+    &_sub-title {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,56 @@
+/*--------------------------------------/
+ Base
+--------------------------------------*/
+$container-width: 1230px;
+$header-height: 116px;
+$sidebar-width: 82px;
+
+/*--------------------------------------/
+ Colors
+--------------------------------------*/
+$white: #ffffff;
+$black: #000000;
+$dark: #181818;
+$gray-light: #f1f1f1;
+$gray: #e6e6e6;
+$green: #50e3c2;
+$blue: #4a90e2;
+$purple: #bd10e0;
+$orange: #ff8d46;
+$red: #dc4848;
+
+$base-color: $black;
+
+/*--------------------------------------/
+ Font size
+--------------------------------------*/
+$base-font-size: 14px;
+$small-font-size: 13px;
+$large-font-size: 17px;
+$button-font-size: 14px;
+
+/*--------------------------------------/
+ Fonts
+--------------------------------------*/
+$Circe: 'Circe', sans-serif;
+
+$text-family: $Circe;
+$heading-family: $Circe;
+
+/*--------------------------------------/
+ Breakpoints
+--------------------------------------*/
+$breakpoints: (
+        wide: 0px,
+        xl: 1280px,
+        lg: 1024px,
+        md: 860px,
+        sm: 640px,
+        xs: 480px
+) !default;
+
+/*--------------------------------------/
+ Path
+--------------------------------------*/
+$image-path: '../img/';
+$font-path: '../fonts/';

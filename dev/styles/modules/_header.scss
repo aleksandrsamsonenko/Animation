@@ -1,0 +1,58 @@
+.header{
+    padding: 34px 80px 42px;
+    height: $header-height;
+    background: $dark;
+    display: flex;
+    color: $white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: color 0.5s;
+
+    @include media(sm) {
+        background: $white;
+    }
+
+    &_block{
+        margin-left: 125px;
+    }
+
+    .header-logo_img.-black {
+        display: none;
+    }
+
+    &.-white {
+        background: $white;
+        color: $dark;
+
+        .header-logo_img {
+            display: none;
+        }
+
+        .header-logo_img.-black {
+            display: block;
+        }
+
+        .hamburger_inner:before,
+        .hamburger_inner:after {
+            background-color: $dark;
+        }
+    }
+}
+
+.header-logo{
+    height: 100%;
+    flex: 0 1 120px;
+    display: flex;
+    margin-right: auto;
+
+    &_link {
+        align-self: center;
+        min-width: 1px; // IE fix
+    }
+
+    &_img{
+        max-height: 40px;
+        max-width: 100%;
+    }
+}

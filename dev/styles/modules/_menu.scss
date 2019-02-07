@@ -1,0 +1,38 @@
+.menu{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-list{
+    display: flex;
+    width: 100%;
+}
+
+.menu-item{
+    display: flex;
+    align-items: center;
+    margin: 0 17px;
+    font-size: $base-font-size;
+    font-weight: bold;
+
+    &_link{
+        white-space: nowrap;
+    }
+}
+
+.menu-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-size: $base-font-size;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+
+    .hamburger {
+        margin-right: 10px;
+    }
+}
